@@ -131,7 +131,7 @@ body{
 @media (max-width: 991px){
 	.col-team-7{
 		float: left;
-		width: 20%;/*Breakpoint at 991*/
+		width: 25%;/*Breakpoint at 991*/
 	}
 }
 @media (max-width: 768px){
