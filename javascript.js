@@ -102,7 +102,9 @@ function initialize()
 {
 var mapProp = {
   center:myCenter,
-  zoom:12,
+  zoom:15,
+  scrollwheel:false,
+  draggable: false,
   mapTypeId:google.maps.MapTypeId.ROADMAP
   };
 
@@ -134,3 +136,10 @@ $(window).load(function() {
     // Animate loader off screen
     $(".se-pre-con").fadeOut("slow");;
   });
+
+
+$(document).ready(function(){
+  $('#nav-icon1,#nav-icon2,#nav-icon3,#nav-icon4').click(function(){
+    $(this).toggleClass('open');
+  });
+});

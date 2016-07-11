@@ -116,9 +116,8 @@ body{
 
 .col-team-7{
 	position: relative;
-	min-height: 1px;
-	padding-left: 15px;
-	padding-right: 15px;
+	padding-left: 0px;
+	padding-right: 0px;
 	width: 14.285714%;
 	float: left;
 }
@@ -155,7 +154,13 @@ body{
 /* Contact */
 .contact{
 }
-
+.col-sm-3-all {
+	position: relative;
+ 	min-height: 1px;
+ 	padding:2px;
+ 	float: left;
+ 	width: 33.33%;	
+}
 
 .col-sm-12-family{
 	position: relative;
