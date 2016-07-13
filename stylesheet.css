@@ -65,7 +65,7 @@ body{
 .navbar-custom .nav li a:hover {
     outline: 0;
     color: #11aef5; /* On BLUE nav bar Text Onhover Color */
-    background-color: white; /* On BLUE and On TRANSPARENT Onhover Background Color */
+    background-color: transparent; /* On BLUE and On TRANSPARENT Onhover Background Color */
 }
 .navbar-custom .nav li a:focus,
 .navbar-custom .nav li a:active {
