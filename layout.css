@@ -1,9 +1,81 @@
-body{
+/*Service Icon Layout*/
+.col-user-1by8{
+	position: relative;
+	min-height: 1px;
+	padding-right: 15px;
+	padding-left: 15px;
 }
-
-/* Wrapper */
-#wrapper{
+@media (max-width: 768px){/*Mobile View*/
+	.col-user-1by8{
+		float: left;
+		width: 20%
+	}
 }
+@media (min-width: 768px){/*Desktop View*/
+	.col-user-1by8{
+		float: left;
+		width: 12.5%
+	}
+}
+/*About Us Ingographics*/
+.col-user-1by7{
+	min-height: 1px;
+}
+@media (max-width: 768px){
+	.col-user-1by7{
+		float: left;
+		width: 14.2856%
+	}
+}
+@media (min-width: 768px){
+	.col-user-1by7{
+		float: left;
+		width: 14.2856%
+	}
+}
+.col-user-1by1{
+	position: relative;
+	min-height: 1px;
+}
+@media (max-width: 768px){
+	.col-user-1by1{
+		float: left;
+		width: 100%
+	}
+}
+@media (min-width: 768px){
+	.col-user-1by1{
+		float: left;
+		width: 100%
+	}
+}
+.col-user-1by12{
+	position: relative;
+	min-height: 1px;
+	padding: 0px;/*For Alumini Section*/
+}
+.col-user-1by12{
+	z-index: 999;
+}
+@media (max-width: 768px){
+	.col-user-1by12{
+		float: left;
+		width: 8.33%;
+	}
+}
+@media (min-width: 768px){
+	.col-user-1by12{
+		float: left;
+		width: 8.33%
+	}
+}
+.container-user{
+  margin-right: auto;
+  margin-left: auto;
+  padding-left:0px; 
+  padding-right:0px;
+}
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx			
 .paddding-zero{
 	padding-left: 0px;
 	padding-right: 0px;
@@ -22,38 +94,6 @@ body{
     width: 76%;
   }
 }
-
-/* Navigation */
-.navigation{
-}
-
-/* Landing Page */
-.landingpage{
-}
-
-/* Services */
-.services{
-}
-.user-col-sm-1{
-	position: relative;
-	min-height: 1px;
-	padding-right: 15px;
-	padding-left: 15px;
-}
-@media (max-width: 768px){
-	.user-col-sm-1{
-		float: left;
-		width: 16.665%
-	}
-}
-@media (min-width: 768px){
-	.user-col-sm-1{
-		float: left;
-		width: 8.332%
-	}
-}
-
-/* portfolio */
 .user-col-sm-2{
 	position: relative;
 	min-height: 1px;
@@ -72,8 +112,6 @@ body{
 		width: 16.666666666%
 	}
 }
-
-/* Client */
 .user-col-sm-80per{
 	position: relative;
 	min-height: 1px;
@@ -92,28 +130,6 @@ body{
 		width: 12.444%
 	}
 }
-
-/* About */
-.about{
-}
-
-.user-col-info{
-	min-height: 1px;
-}
-@media (max-width: 768px){
-	.user-col-info{
-		float: left;
-		width: 14.2856%
-	}
-}
-@media (min-width: 768px){
-	.user-col-info{
-		float: left;
-		width: 14.2856%
-	}
-}
-/*..............................................................................*/
-
 .col-team-7{
 	position: relative;
 	padding-left: 0px;
@@ -151,46 +167,10 @@ body{
 		width: 70%;/*Breakpoint at 299*/
 	}
 }
-/* Contact */
-.contact{
-}
 .col-sm-3-all {
 	position: relative;
  	min-height: 1px;
  	padding:2px;
  	float: left;
  	width: 33.33%;	
-}
-
-.col-sm-12-family{
-	position: relative;
-	min-height: 1px;
-}
-@media (max-width: 768px){
-	.col-sm-12-family{
-		float: left;
-		width: 100%
-	}
-}
-@media (min-width: 768px){
-	.col-sm-12-family{
-		float: left;
-		width: 100%
-	}
-}
-.col-sm-1-family{
-	position: relative;
-	min-height: 1px;
-}
-@media (max-width: 768px){
-	.col-sm-1-family{
-		float: left;
-		width: 8.33%;
-	}
-}
-@media (min-width: 768px){
-	.col-sm-1-family{
-		float: left;
-		width: 8.33%
-	}
 }
