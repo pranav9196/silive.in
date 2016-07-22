@@ -44,13 +44,22 @@
 	<script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>	
 	<link href="smart.scss" rel="stylesheet/scss" type="text/css">
 
+
+
+<style type="text/css">
+
+	
+
+
+</style>
+
 </head>
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
 
 
 <!-- ================================================================================================== Loader -->
 
-<div class="se-pre-con"></div>
+<!-- <div class="se-pre-con"></div> -->
 
 <!-- ================================================================================================== Wrapper -->
 
@@ -72,10 +81,7 @@
                 </button>
                 <a class="navbar-brand page-scroll" href="#page-top">
                     <span>
-	                    <span >
-	                    Software
-	                    </span> 
-	                    Incubator
+	                    Software Incubator
                     </span>                    
                     <!-- <img src="images/software incubator font.png" height="100%"> -->
                 </a>
@@ -122,11 +128,23 @@
 </section> -->
 <section>
 	<div class="fluid-container" style="height: 600px;overflow: hidden;background: #000; background-size: cover;">
-		<ul id="scene" style="margin-top: 100px;">
+		<!-- <ul id="scene" style="margin-top: 100px;">
 			<li class="layer" data-depth="0.4">
 				<img src="images/silogo.svg" class="center-block" width="300px" height="auto" style="margin: auto;">
 			</li>
+		</ul> -->
+
+	<div id="container" class="container-logo">
+		<ul id="scene" class="scene">
+			<li class="layer" data-depth="1.00"><img src="images/silogo.svg" width="300px" height="auto"></li>
+			<li class="layer" data-depth="0.80"><img src="images/silogo.svg" width="320px" height="auto"></li>
+			<li class="layer" data-depth="0.60"><img src="images/silogo.svg" width="340px" height="auto"></li>
+			<li class="layer" data-depth="0.40"><img src="images/silogo.svg" width="360px" height="auto"></li>
+			<li class="layer" data-depth="0.20"><img src="images/silogo.svg" width="380px" height="auto"></li>
+			<li class="layer" data-depth="0.00"><img src="images/silogo.svg" width="400px" height="auto"></li>
 		</ul>
+	</div>
+
 		<div class="center-block" style="text-align: center;padding: 0px auto;">
 			<h1 style="font-size: 40px; font-weight: 700; color: white; text-transform: uppercase;">We belive in <span style="color: #11aef5;"> Redefining Limitations</h1>
 			<span>
@@ -2472,7 +2490,7 @@ var swiper2 = new Swiper('.swiper2', {
 			</div>
 		</div>
 		<div class="col-sm-12">
-			<div class="row" style="padding: 0px;" >
+			<div class="row" style="padding: 0px;">
 				<div class="col-sm-6" style="padding: 0px;">
 					<div class="col-user-1by12" id="img-family-id">
 						<a href="#familyModal1" class="familyModal" data-toggle="modal">
@@ -2480,7 +2498,9 @@ var swiper2 = new Swiper('.swiper2', {
 						</a>
 					</div>
 					<div class="col-user-1by12" id="img-family-id">
+						<a href="#familyModal1" class="familyModal" data-toggle="modal">
 						<img src="images/profile2.jpg" class="img-responsive img-family">
+						</a>
 					</div>
 					<div class="col-user-1by12" id="img-family-id">
 						<img src="images/profile3.jpg" class="img-responsive img-family">
