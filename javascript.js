@@ -11,7 +11,7 @@
  */
 // jQuery to collapse the navbar on scroll
 function collapseNavbar() {
-    if ($(".navbar").offset().top > 50) {
+    if ($(".navbar").offset().top > 500) {
         $(".navbar-fixed-top").addClass("top-nav-collapse");
     } else {
         $(".navbar-fixed-top").removeClass("top-nav-collapse");
@@ -27,7 +27,7 @@ $(function() {
         var $anchor = $(this);
         $('html, body').stop().animate({
             scrollTop: $($anchor.attr('href')).offset().top
-        }, 1500, 'easeInOutExpo');
+        }, 3000, 'easeInOutExpo');
         event.preventDefault();
     });
 });
@@ -95,39 +95,9 @@ jQuery.easing.jswing=jQuery.easing.swing;jQuery.extend(jQuery.easing,{def:"easeO
 
 //.............................................................................................................................................................
 
-//Google Map
-// var myCenter=new google.maps.LatLng(28.676488, 77.501936);
-
-// function initialize()
-// {
-// var mapProp = {
-//   center:myCenter,
-//   zoom:15,
-//   scrollwheel:false,
-//   draggable: false,
-//   mapTypeId:google.maps.MapTypeId.ROADMAP
-//   styles: [{"featureType":"all","elementType":"labels.text.fill","stylers":[{"saturation":36},{"color":"#000000"},{"lightness":40}]},{"featureType":"all","elementType":"labels.text.stroke","stylers":[{"visibility":"on"},{"color":"#000000"},{"lightness":16}]},{"featureType":"all","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"administrative","elementType":"geometry.fill","stylers":[{"color":"#000000"},{"lightness":20}]},{"featureType":"administrative","elementType":"geometry.stroke","stylers":[{"color":"#000000"},{"lightness":17},{"weight":1.2}]},{"featureType":"landscape","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":20}]},{"featureType":"poi","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":21}]},{"featureType":"road.highway","elementType":"geometry.fill","stylers":[{"color":"#000000"},{"lightness":17}]},{"featureType":"road.highway","elementType":"geometry.stroke","stylers":[{"color":"#000000"},{"lightness":29},{"weight":0.2}]},{"featureType":"road.arterial","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":18}]},{"featureType":"road.local","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":16}]},{"featureType":"transit","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":19}]},{"featureType":"water","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":17}]}]
-//   };
-
-// var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
-
-// var marker=new google.maps.Marker({
-//   position:myCenter,
-//   });
-
-// marker.setMap(map);
-
-// var infowindow = new google.maps.InfoWindow({
-//   content:"Ajay Kumar Garg Engineering College"
-//   });
-
-// infowindow.open(map,marker);
-// }
-
-// google.maps.event.addDomListener(window, 'load', initialize);
 
 
- 
+
 
 //.............................................................................................................................................................
  
@@ -142,6 +112,35 @@ $(window).load(function() {
 
 //..............................................................................................................................................................
 
-//Division Fixed
+//Scroll Effect
 
 //...............................................................................................................................................................
+    $.fn.moveIt = function(){
+  var $window = $(window);
+  var instances = [];
+  
+  $(this).each(function(){
+    instances.push(new moveItItem($(this)));
+  });
+  
+  window.onscroll = function(){
+    var scrollTop = $window.scrollTop();
+    instances.forEach(function(inst){
+      inst.update(scrollTop);
+    });
+  }
+}
+
+var moveItItem = function(el){
+  this.el = $(el);
+  this.speed = parseInt(this.el.attr('data-scroll-speed'));
+};
+
+moveItItem.prototype.update = function(scrollTop){
+  var pos = scrollTop / this.speed;
+  this.el.css('transform', 'translateY(' + -pos + 'px)');
+};
+
+$(function(){
+  $('[data-scroll-speed]').moveIt();
+});

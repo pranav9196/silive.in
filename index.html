@@ -24,7 +24,6 @@
     <!-- Google Map -->
     <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
 
-
     <!-- Google FOnt -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Roboto:100,400,900" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Alex+Brush" rel="stylesheet">
@@ -44,6 +43,9 @@
 	<script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>	
 	<link href="smart.scss" rel="stylesheet/scss" type="text/css">
 
+	<!-- Thumbnail-Slider CSS & JS  -->
+	<link rel="stylesheet" type="text/css" href="lib/thumbnail/thumbnail-slider.css">
+	<script src="lib/thumbnail/thumbnail-slider.js"></script>
 
 
 <style type="text/css">
@@ -133,17 +135,34 @@
 				<img src="images/silogo.svg" class="center-block" width="300px" height="auto" style="margin: auto;">
 			</li>
 		</ul> -->
-
 	<div id="container" class="container-logo">
+
 		<ul id="scene" class="scene">
-			<li class="layer" data-depth="1.00"><img src="images/silogo.svg" width="300px" height="auto"></li>
-			<li class="layer" data-depth="0.80"><img src="images/silogo.svg" width="320px" height="auto"></li>
-			<li class="layer" data-depth="0.60"><img src="images/silogo.svg" width="340px" height="auto"></li>
-			<li class="layer" data-depth="0.40"><img src="images/silogo.svg" width="360px" height="auto"></li>
-			<li class="layer" data-depth="0.20"><img src="images/silogo.svg" width="380px" height="auto"></li>
-			<li class="layer" data-depth="0.00"><img src="images/silogo.svg" width="400px" height="auto"></li>
+			<li class="layer" data-depth="0.25"><img src="images/silogo.svg" width="300px" height="auto"></li>
+			<li class="layer" data-depth="0.20"><img src="images/silogo.svg" width="320px" height="auto"></li>
+			<li class="layer" data-depth="0.15"><img src="images/silogo.svg" width="340px" height="auto"></li>
+			<li class="layer" data-depth="0.10"><img src="images/silogo.svg" width="360px" height="auto"></li>
+			<li class="layer" data-depth="0.05"><img src="images/silogo.svg" width="380px" height="auto"></li>
+			<li class="layer" data-depth="0.01"><img src="images/silogo.svg" width="400px" height="auto"></li>
 		</ul>
 	</div>
+
+
+<!-- This Divison is for a Background to be scrolled throughout this page and all unites at Landing -->
+<!-- 
+<div class="content" style="z-index: -999;">
+  <div class="wrapper">
+    <div class="box" data-scroll-speed="6"><img src="images/layer1.png"></div>
+    <div class="box" data-scroll-speed="1"><img src="images/layer2.png"></div>
+    <div class="box" data-scroll-speed="17"><img src="images/layer3.png"></div>
+    <div class="box" data-scroll-speed="3"><img src="images/layer4.png"></div>
+    <div class="box" data-scroll-speed="12"><img src="images/layer5.png"></div>
+    <div class="box" data-scroll-speed="9"><img src="images/layer6.png"></div>
+  </div>
+</div>
+
+
+ -->
 
 		<div class="center-block" style="text-align: center;padding: 0px auto;">
 			<h1 style="font-size: 40px; font-weight: 700; color: white; text-transform: uppercase;">We belive in <span style="color: #11aef5;"> Redefining Limitations</h1>
@@ -294,6 +313,106 @@ var parallax = new Parallax(scene);
 		</div>
 	</div>
 	<!-- >>>>>>> Experiment Lab END <<<<<<<< -->
+
+
+<style type="text/css">
+	#thumbnail-slider {
+    width:100%;
+    max-width:1200px;
+}
+</style>
+<!--start-->
+    <div style="padding:120px 0;">
+        <div id="thumbnail-slider">
+            <div class="inner">
+                <ul>
+                    <li>
+						<a class="thumb" href="images/bg9.jpg"></a>
+                    </li>
+                    <li>
+                        <a class="thumb" href="images/bg9.jpg"></a>
+                    </li>
+                    <li>
+                        <a class="thumb" href="images/bg9.jpg"></a>
+                    </li>
+                    <li>
+                        <a class="thumb" href="images/bg9.jpg"></a>
+                    </li>
+                    <li>
+                        <a class="thumb" href="images/bg9.jpg"></a>
+                    </li>
+                    <li>
+                        <a class="thumb" href="images/bg9.jpg"></a>
+                    </li>
+                    <li>
+                        <a class="thumb" href="images/bg9.jpg"></a>
+                    </li>
+                    <li>
+                        <a class="thumb" href="images/bg9.jpg"></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--end-->
+
+
+    <!-- Modal Useage DATA -->  	
+    	<div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+	        <div class="modal-content">
+	            <div class="close-modal" data-dismiss="modal">
+	                <div class="lr">
+	                    <div class="rl">
+	                    </div>
+	                </div>
+	            </div>
+	            <div class="container">
+	                <div class="row">
+	                    <div class="col-sm-6 col-lg-offset-3">
+	                        <div class="modal-body">
+	                            <h2 >Project Name</h2>
+	                            <img src="images/placeholder_image_wide.jpg" class="img-responsive img-centered" alt="">
+	                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tristique massa eget risus vestibulum, id commodo sapien commodo. Morbi mattis imperdiet mtae neque vel hendrerit. Quisque tempus nisi eu quam consequat semper. Aenean quis fermentum tortor, id mollis tellus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Duis in nisi blandit, bibendum dolor quis, bibendum velit.</p>
+	                            <ul class="list-inline item-details">
+	                            	<li>
+	                                <span class="bolder">Link:</span>
+	                                <span>www.silive.in</span>
+	                                </li>
+	                            </ul>
+	                            <ul class="list-inline item-details">
+	                                <li>
+	                                <span class="bolder">Deployed Date:</span>
+	                                <span>13/05/2016</span>
+	                                </li>
+	                                <li>
+	                                <span class="bolder">Technologies:</span>
+	                                <span>HTML, Css, JavaScript, Bootstrap etc.</span>
+	                                </li>
+	                            </ul>
+	                            <!-- <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button> -->
+	                        </div>
+	                    </div>
+	                </div>
+	            </div>
+	        </div>
+	    </div>
+
+
+<script type="text/javascript">
+var nsOptions = {
+	thumbWidth: "90%",
+	thumbHeight: "auto",
+	showMode: 5,
+}
+</script>
+
+
+
+
+
+
+
+
 
 	<!-- Container -->
 	<div class="fluid-container">		
@@ -1618,7 +1737,7 @@ var parallax = new Parallax(scene);
 		            	</div>
 		            </div>
 		            <!-- Single Slide Card Start -->
-		            <div class="swiper-slide">
+		            <div class="swiper-slide thumbnail">
 		            	<div class="row client_property">
 		            		<img src="images/placeholder_image.jpg" class="img-responsive">
 		            	</div>
@@ -1628,7 +1747,7 @@ var parallax = new Parallax(scene);
 		            	</div>
 		            </div>
 		            <!-- Single Slide Card Start -->
-		            <div class="swiper-slide">
+		            <div class="swiper-slide thumbnail">
 		            	<div class="row client_property">
 		            		<img src="images/placeholder_image.jpg" class="img-responsive">
 		            	</div>
@@ -1638,7 +1757,7 @@ var parallax = new Parallax(scene);
 		            	</div>
 		            </div>
 		            <!-- Single Slide Card Start -->
-		            <div class="swiper-slide">
+		            <div class="swiper-slide thumbnail">
 		            	<div class="row client_property">
 		            		<img src="images/placeholder_image.jpg" class="img-responsive">
 		            	</div>
@@ -1648,7 +1767,7 @@ var parallax = new Parallax(scene);
 		            	</div>
 		            </div>
 		            <!-- Single Slide Card Start -->
-		            <div class="swiper-slide">
+		            <div class="swiper-slide thumbnail">
 		            	<div class="row client_property">
 		            		<img src="images/placeholder_image.jpg" class="img-responsive">
 		            	</div>
@@ -1658,7 +1777,7 @@ var parallax = new Parallax(scene);
 		            	</div>
 		            </div>
 		            <!-- Single Slide Card Start -->
-		            <div class="swiper-slide">
+		            <div class="swiper-slide thumbnail">
 		            	<div class="row client_property">
 		            		<img src="images/placeholder_image.jpg" class="img-responsive">
 		            	</div>
@@ -1668,7 +1787,7 @@ var parallax = new Parallax(scene);
 		            	</div>
 		            </div>
 		            <!-- Single Slide Card Start -->
-		            <div class="swiper-slide">
+		            <div class="swiper-slide thumbnail">
 		            	<div class="row client_property">
 		            		<img src="images/placeholder_image.jpg" class="img-responsive">
 		            	</div>
@@ -1678,7 +1797,7 @@ var parallax = new Parallax(scene);
 		            	</div>
 		            </div>
 		            <!-- Single Slide Card Start -->
-		            <div class="swiper-slide">
+		            <div class="swiper-slide thumbnail">
 		            	<div class="row client_property">
 		            		<img src="images/placeholder_image.jpg" class="img-responsive">
 		            	</div>
@@ -1688,7 +1807,7 @@ var parallax = new Parallax(scene);
 		            	</div>
 		            </div>
 		            <!-- Single Slide Card Start -->
-		            <div class="swiper-slide">
+		            <div class="swiper-slide thumbnail">
 		            	<div class="row client_property">
 		            		<img src="images/placeholder_image.jpg" class="img-responsive">
 		            	</div>
@@ -1698,7 +1817,7 @@ var parallax = new Parallax(scene);
 		            	</div>
 		            </div>
 		            <!-- Single Slide Card Start -->
-		            <div class="swiper-slide">
+		            <div class="swiper-slide thumbnail">
 		            	<div class="row client_property">
 		            		<img src="images/placeholder_image.jpg" class="img-responsive">
 		            	</div>
@@ -1708,7 +1827,7 @@ var parallax = new Parallax(scene);
 		            	</div>
 		            </div>
 		            <!-- Single Slide Card Start -->
-		            <div class="swiper-slide">
+		            <div class="swiper-slide thumbnail">
 		            	<div class="row client_property">
 		            		<img src="images/placeholder_image.jpg" class="img-responsive">
 		            	</div>
@@ -1718,7 +1837,7 @@ var parallax = new Parallax(scene);
 		            	</div>
 		            </div>
 		            <!-- Single Slide Card Start -->
-		            <div class="swiper-slide">
+		            <div class="swiper-slide thumbnail">
 		            	<div class="row client_property">
 		            		<img src="images/placeholder_image.jpg" class="img-responsive">
 		            	</div>
@@ -1744,7 +1863,7 @@ var swiper1 = new Swiper('.swiper1', {
     prevButton: '.swiper-button-prev',
     paginationClickable: true,
     initialSlide: 4,
-    spaceBetween: 50,
+    spaceBetween: 40,
     centeredSlides: false,
     slidesPerView: 4,
     autoplayDisableOnInteraction: false,
@@ -1787,7 +1906,7 @@ var swiper1 = new Swiper('.swiper1', {
 		
 		<div class="row" style="padding-top: 50px;">	
 			<div class="col-sm-6 about-para-1">
-				<h3><span>Software</span> Incubator</h3>
+				<h3 style="margin-top: 0px;"><span>Software</span> Incubator</h3>
 				<p><b><span>Software</span> Incubatoris </b> a research and develoment center established within the portal of Ajay Kumar Garg Engineering College . Software Incubator has set a foothold in the areas of software development, web-based enterprise solutions, web application and website development. Software Incubator focusses on high integrity and commitment, quality and rigor at every stage of work, passion for excellence, focus on customer satisfaction and an equal opportunity organization that motivates every member to work with passion and commitment. We lay emphasis on Quality Management for all activities that Morbi odio erat, rutrum vel metus id, commodo scelerisque dui. Etiam tempus tortor ac arcu hendrerit molestie. Ut aliquet dignissim erat sit amet varius. Nullam id tellus augue.dui.</p>
 				<div class="col-sm-12">
 					<div class="row" style="padding: 30px 0px">
@@ -1811,7 +1930,7 @@ var swiper1 = new Swiper('.swiper1', {
 								<p>Participation</p>
 							</div>
 							<div class="col-user-1by7 about-svg">
-								<span class="fa fa-pause" style="transform: rotate(90deg); padding-left: 50px;"></span>
+								<span class="fa fa-pause" style="transform: rotate(90deg); padding-left: 50px; padding-top: initial;"></span>
 							</div>
 							<div class="col-user-1by7 about-svg">
 								<img src="images/graph.svg" class="img-responsive">
@@ -1827,11 +1946,7 @@ var swiper1 = new Swiper('.swiper1', {
 				</video>
 			</div>
 		</div>
-		<div class="row">
-			<div class="col-sm-12 about-para-2">
-				<p>Software Incubator is a research and develoment center established within the portal of Ajay Kumar Garg Engineering College . Software Incubator has set a foothold in the areas of software development, web-based enterprise solutions, web application and website development. Software Incubator focusses on high integrity and commitment, quality and rigor at every stage of work, passion for excellence, focus on customer satisfaction and an equal opportunity organization that motivates every member to work with passion and commitment. We lay emphasis on Quality Management for all activities that we undertake.</p>
-			</div>
-		</div>
+		
 	</div>
 	
 <!-- >>>>>>> Testimonail START <<<<<<<<< -->
@@ -3240,6 +3355,11 @@ var swiper2 = new Swiper('.swiper2', {
                 <span style="  color: #808080; font-size: 12px;">
                     Copyright <span class="glyphicon glyphicon-copyright-mark"></span> 2016 Software Incubator  .  All Rights Reserved  .  Terms of Services  .  Privacy Policy  .  Site Map
                 </span>
+                <!-- Scroll Top Button -->
+                
+				<script type="text/javascript" src="http://arrow.scrolltotop.com/arrow204.js"></script>
+				
+
             </p>
         </div>
     </div>

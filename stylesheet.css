@@ -55,6 +55,53 @@ font-family: 'Roboto', sans-serif;
   letter-spacing: 0.5px;
 }
 
+
+/*========================================================= Scroll Effect ============================================================*/
+.content {
+  height: 3000px;
+}
+
+.wrapper {
+  position: fixed;
+}
+
+.wrapper .box {
+  width: 100px;
+  height: 100px;
+  line-height: 100px;
+  text-align: center;
+  font-size: 160%;
+  color: #fff;
+  position: absolute;
+  
+}
+
+.wrapper .box:nth-of-type(2) {
+  left: 100px;
+  
+}
+
+.wrapper .box:nth-of-type(3) {
+  left: 200px;
+  
+}
+
+.wrapper .box:nth-of-type(4) {
+  left: 300px;
+  
+}
+
+.wrapper .box:nth-of-type(5) {
+  left: 400px;
+  
+}
+
+.wrapper .box:nth-of-type(6) {
+  left: 500px;
+  
+}
+
+
 /*=========================================================== Parallex ==================================================================*/
 .container-logo img {
     display: block;
@@ -1211,24 +1258,3 @@ font-family: 'Roboto', sans-serif;
 
    
   }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
