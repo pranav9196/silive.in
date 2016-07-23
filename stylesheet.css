@@ -197,7 +197,7 @@ font-family: 'Roboto', sans-serif;
     margin-bottom: 0;
     border-bottom: none;
     text-transform: uppercase;
-    background-color: rgba(17, 174, 244, 0.93); /*MOBILEVIEW: On Scroll Background Color Change i.e BLUE */
+    background-color: rgba(17, 174, 244, 1); /*MOBILEVIEW: On Scroll Background Color Change i.e BLUE */
 }
 .navbar-custom .navbar-brand {
     font-weight: 400;
@@ -229,7 +229,7 @@ font-family: 'Roboto', sans-serif;
 .navbar-custom .nav li a:hover {
     outline: 0;
     color: #11aef5; /* On BLUE nav bar Text Onhover Color */
-    background-color: rgba(255,255,255,0.9); /* On BLUE and On TRANSPARENT Onhover Background Color */
+    background-color: transparent; /* On BLUE and On TRANSPARENT Onhover Background Color */
 }
 .navbar-custom .nav li a:focus,
 .navbar-custom .nav li a:active {
@@ -258,8 +258,13 @@ font-family: 'Roboto', sans-serif;
     }
     .navbar-custom.top-nav-collapse {
         padding: 0px; /* Padding of BLUE Nav bar Test */
-        background-color: rgba(17, 174, 244, 0.93); /*DESKTOPVIEW: On Scroll Background Color Change i.e BLUE */
+        background-color: rgba(17, 174, 244, 1); /*DESKTOPVIEW: On Scroll Background Color Change i.e BLUE */
         color: #000;
+    }
+    .navbar-custom.top-nav-collapse  .nav li a:hover {
+        outline: 0;
+        color: #11aef5; /* On BLUE nav bar Text Onhover Color */
+        background-color: rgba(255,255,255,1); /* On BLUE and On TRANSPARENT Onhover Background Color */
     }
 }
 /*..................Hamburger................................................................................................................*/
@@ -441,7 +446,6 @@ font-family: 'Roboto', sans-serif;
 .testimonial{
 }
 .swiper2{
-  padding: 20px 0px;
   font-size: 20px; 
   margin: -10px 0px -100px 0px;
 }
@@ -550,51 +554,13 @@ font-family: 'Roboto', sans-serif;
 #port-img{
   width: 100%;
 }
-.hidden-img{
-  visibility: hidden;
-}
-.boss {
-    display: block;
-    position: relative;
-    margin: 0 auto;
-    max-width: 400px;
-    padding: 2px;
-}
+
 
 .caption {
     position: absolute;
     width: 100%;
     height: 100%;
     padding: 0px 3px 3px 0px;
-}
-.sub-content {
-  background-image: url(images/placeholder_image_fade.png);
-  background-size: cover;
-  height: 0%;
-  width: 0%;
-  opacity: 0;
-    -webkit-transition: all .3s ease;
-    -moz-transition: all .3s ease;
-    transition: all .3s ease;
-}
-.sub-content:hover {
-  background-image: url(images/placeholder_image_fade.png);
-  background-size: cover;
-  height: 100%;
-  width: 100%;
-  opacity: 1;
-}
-.caption-content {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-}
-
-.btn-livep {
-    margin-top: 40%;
-    text-align: center;
-    font-size: 15px;
-    color: #fff;
 }
 
 /*---------------------------------------------------------------*/
@@ -688,6 +654,9 @@ font-family: 'Roboto', sans-serif;
 .client{
 
 }
+.client-text{
+
+}
 .client h2{
   font-size: 18px;
   margin-bottom: 2px;
@@ -695,10 +664,6 @@ font-family: 'Roboto', sans-serif;
 .client_property{
   margin:0px;
 }
-/*................................*/
-.thumbnail{
-}
-/*................................*/
 
 /*................................*/
 
@@ -777,7 +742,8 @@ font-family: 'Roboto', sans-serif;
   font-size: 16px;
 }
 .about-para-1{
-
+ padding-left: 100px;
+ padding-top: 30px;
 }
 .about-para-1 h3{
   font-family: 'Roboto', sans-serif;
@@ -787,10 +753,10 @@ font-family: 'Roboto', sans-serif;
   text-align:justify;
 }
 .about-para-1 h3>span{
-  color: #11aef5;
+  
 }
 .about-para-1 p>span{
-  color: #11aef5;
+  
 }
 .about-para-2{
   margin-top: 00px;
